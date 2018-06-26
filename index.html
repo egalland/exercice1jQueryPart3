@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <title>Exercice 1</title>
+</head>
+<body>
+  <form>
+    <button type="button" name="button" id="clickMe" style="height: 80px; width: 150px;">0</button>
+  </form>
+  <script>
+  // DECLARATION ET INITIALISATION DE LA VARIABLE POUR COMPTER
+  var count = 1;
+  // QUAND ON CLIQUE SUR LE BOUTON, ON DECLANCHE LA FONCTION
+  $('#clickMe').click(function(){
+    // AFFICHE ET INCREMENTE LE BOUTON de 1
+    $('#clickMe').text(count++);
+  });
+  </script>
+</body>
+</html>
